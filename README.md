@@ -36,7 +36,8 @@ pip install -r requirements.txt
 
 ## Structured Value-based Planning (SVP)
 
-We provide implementations for two classical problems, the Inverted Pendulum and the Double Integrator. Note that the only difference for Mountain Car (and Cart-Pole) is the system dynamics, which can be done by modifying [`MDP.jl`]().
+We provide implementations for three classical problems, the Inverted Pendulum, the Double Integrator and the Cart-Pole. For the first two problems, the state space dimension is 2; while for the Cart-Pole problem, the state space dimension is higher, with 4 dimensions.
+Note that for different problems, the sizes of state/action space discretization may vary, which can be modified in [`MDP.jl`]().
 
 
 **Note:** Since we call Python for nmatrix estimation algorithm from Julia, you need to install [`PyCall`](https://github.com/JuliaPy/PyCall.jl) package, and also place the `fancyimpute` folder under xxx path.
