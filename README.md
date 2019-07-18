@@ -40,5 +40,5 @@ We provide implementations for three classical problems, the Inverted Pendulum, 
 Note that for different problems, the sizes of state/action space discretization may vary, which can be modified in [`MDP.jl`]().
 
 
-**Note:** Since we call Python (for the matrix estimation algorithms) from Julia, you need to install [`PyCall`](https://github.com/JuliaPy/PyCall.jl) package, and also place the `fancyimpute` folder under xxx path.
+**Note:** Since we call Python (for the matrix estimation algorithms) from Julia, you will need to install the [`PyCall`](https://github.com/JuliaPy/PyCall.jl) package, and also place the `fancyimpute` folder in your Python `site-packages` directory.
 Solutions for common problems (such as import errors) can be found [here](https://github.com/JuliaPy/PyCall.jl).
