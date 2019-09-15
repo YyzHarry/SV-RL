@@ -1,4 +1,4 @@
-# Structured Value-based Deep Reinforcement Learning (SV-RL)
+# Structured Value-based Reinforcement Learning (SV-RL)
 
 
 ## Installation
