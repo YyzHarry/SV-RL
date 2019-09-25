@@ -1,10 +1,10 @@
 # Harnessing Structures for Value-Based Planning and Reinforcement Learning
 
-This repository contains the implementation code for paper [Harnessing Structures for Value-Based Planning and Reinforcement Learning]() (__In submission__).
+This repository contains the implementation code for paper [Harnessing Structures for Value-Based Planning and Reinforcement Learning]().
 
-We harness ....
-We propose Structured Value-based Planning (SVP) for classical stochastic control and planning tasks.
-We propose Structured Value-based Deep Reinforcement Learning (SV-RL) for xxx.
+This work proposes a generic framework that allows for exploiting the underlying _low-rank structures_ of the state-action value function (_Q_ function), in both planning and deep reinforcement learning.
+We verify empirically the wide existence of low-rank _Q_ functions in the context of control and deep RL tasks.
+Specifically, we propose (1) Structured Value-based Planning (__SVP__), for classical stochastic control and planning tasks, and (2) Structured Value-based Deep Reinforcement Learning (__SV-RL__), applicable for any value-based techniques to improve performance on deep RL tasks.
 
 
 ## Installation
@@ -36,14 +36,14 @@ pip install -r requirements.txt
 
 
 ## Structured Value-based Planning (SVP)
-We provide implementations for three classical problems, the Inverted Pendulum, the Double Integrator and the Cart-Pole. For the first two problems, the state space dimension is 2; while for the Cart-Pole problem, the state space dimension is higher, with 4 dimensions.
-Note that for different problems, the sizes of state/action space discretization may vary, which can be modified in [`MDP.jl`]().
-
-**Note:** Since we call Python (for the matrix estimation algorithms) from Julia, you will need to install the [`PyCall`](https://github.com/JuliaPy/PyCall.jl) package, and also place the `fancyimpute` folder in your Python `site-packages` directory.
-Solutions for common problems (such as import errors) can be found [here](https://github.com/JuliaPy/PyCall.jl).
+For the _Q_ matrix of dimension |S|×|A|, at each value iteration, SVP randomly updates a small portion of the _Q(s,a)_ and employs matrix estimation to reconstruct the remaining elements. We show that stochastic control and planning problems can greatly benefit from such a scheme, where much fewer samples (only sample around __20%__ of _(s,a)_ pairs at each iteration) can achieve almost the same policy as the optimal one.
+[[Experimental details]](https://github.com/YyzHarry/SV-RL/tree/master/svp)
 
 
 ## Structured Value-based Reinforcement Learning (SV-RL)
+SV-RL is applicable for any value-based deep RL methods such as [DQN](https://www.nature.com/articles/nature14236).
+Instead of the full _Q_ matrix, SV-RL naturally focuses on the "sub-matrix", corresponding to the sampled batch of states at the current iteration. For each sampled _Q_ matrix, we apply matrix estimation to represent the learning target in a structured way, which poses a low rank regularization on this "sub-matrix" throughout the training process, and hence eventually the _Q_-network's predictions. If the task possesses a low-rank property, this scheme will give a clear guidance on the learning space during training, after which a better policy can be anticipated.
+[[Experimental details]](https://github.com/YyzHarry/SV-RL/tree/master/sv_rl)
 
 
 ## Acknowledgements
