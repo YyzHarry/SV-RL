@@ -1,6 +1,6 @@
 # Structured Value-based Reinforcement Learning (SV-RL)
-
-We provide the code for the SV-RL algorithm implementation. We apply SV-RL across three different value-based learning methods, including [DQN](), [Double DQN](), and [Dueling DQN](). (refer to paper's description)
+We provide the code for the SV-RL algorithm implementation. We apply SV-RL on three
+representative value-based RL techniques, including [DQN](https://www.nature.com/articles/nature14236), [Double DQN](https://arxiv.org/abs/1509.06461), and [Dueling DQN](https://arxiv.org/abs/1511.06581).
 
 
 ## Main Files
