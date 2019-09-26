@@ -1,4 +1,6 @@
 # Structured Value-based Reinforcement Learning (SV-RL)
+![overview](../assets/svrl.png)
+
 We provide the code for the SV-RL algorithm implementation. We apply SV-RL on three
 representative value-based RL techniques, including [DQN](https://www.nature.com/articles/nature14236), [Double DQN](https://arxiv.org/abs/1509.06461), and [Dueling DQN](https://arxiv.org/abs/1511.06581).
 
@@ -41,3 +43,9 @@ python plot.py <data_path1> <data_path2> \
 
 
 ## Representative Results
+
+### Results across different value-based RL techniques
+![svrl_results_1](../assets/svrl_results_1.png)
+
+### Diagnosis on ranks _vs._ improvements across different games
+![svrl_results_2](../assets/svrl_results_2.png)
