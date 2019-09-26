@@ -35,15 +35,9 @@ pip install -r requirements.txt
 ```
 
 
-## Structured Value-based Planning (SVP)
-For the _Q_ matrix of dimension |S|×|A|, at each value iteration, SVP randomly updates a small portion of the _Q(s,a)_ and employs matrix estimation to reconstruct the remaining elements. We show that stochastic control and planning problems can greatly benefit from such a scheme, where much fewer samples (only sample around __20%__ of _(s,a)_ pairs at each iteration) can achieve almost the same policy as the optimal one.
-[[Experimental details]](https://github.com/YyzHarry/SV-RL/tree/master/svp)
-
-
-## Structured Value-based Reinforcement Learning (SV-RL)
-SV-RL is applicable for any value-based deep RL methods such as [DQN](https://www.nature.com/articles/nature14236).
-Instead of the full _Q_ matrix, SV-RL naturally focuses on the "sub-matrix", corresponding to the sampled batch of states at the current iteration. For each sampled _Q_ matrix, we apply matrix estimation to represent the learning target in a structured way, which poses a low rank regularization on this "sub-matrix" throughout the training process, and hence eventually the _Q_-network's predictions. If the task possesses a low-rank property, this scheme will give a clear guidance on the learning space during training, after which a better policy can be anticipated.
-[[Experimental details]](https://github.com/YyzHarry/SV-RL/tree/master/sv_rl)
+## Experiments
+- __[Structured Value-based Planning (SVP)](https://github.com/YyzHarry/SV-RL/tree/master/svp)__
+- __[Structured Value-based Reinforcement Learning (SV-RL)](https://github.com/YyzHarry/SV-RL/tree/master/sv_rl)__
 
 
 ## Acknowledgements
