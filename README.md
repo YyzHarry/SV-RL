@@ -1,6 +1,6 @@
 # Harnessing Structures for Value-Based Planning and Reinforcement Learning
 
-This repository contains the implementation code for paper [Harnessing Structures for Value-Based Planning and Reinforcement Learning]().
+This repository contains the implementation code for paper [Harnessing Structures for Value-Based Planning and Reinforcement Learning](https://arxiv.org/abs/1909.12255).
 
 This work proposes a generic framework that allows for exploiting the underlying _low-rank structures_ of the state-action value function (_Q_ function), in both planning and deep reinforcement learning.
 We verify empirically the wide existence of low-rank _Q_ functions in the context of control and deep RL tasks.
@@ -45,13 +45,13 @@ We use the implemetation in the [fancyimpute package](https://github.com/iskandr
 
 
 ## Citation
-If you find the idea or code useful for your research, please cite [our paper](https://arxiv.org/abs/1905.11971):
+If you find the idea or code useful for your research, please cite [our paper](https://arxiv.org/abs/1909.12255):
 ```
-@inproceedings{yang2019menet,
-  title={ME-Net: Towards Effective Adversarial Robustness with Matrix Estimation},
-  author={Yang, Yuzhe and Zhang, Guo and Katabi, Dina and Xu, Zhi},
-  booktitle={Proceedings of the 36th International Conference on Machine Learning, {ICML} 2019},
+@inproceedings{yang2019harnessing,
+  title={Harnessing Structures for Value-Based Planning and Reinforcement Learning},
+  author={Yang, Yuzhe and Zhang, Guo and Xu, Zhi and Katabi, Dina},
+  journal={arXiv preprint arXiv:1909.12255},
   year={2019},
-  url={https://arxiv.org/abs/1905.11971},
+  url={https://arxiv.org/abs/1909.12255},
 }
 ```
