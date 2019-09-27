@@ -47,7 +47,7 @@ We use the implemetation in the [fancyimpute package](https://github.com/iskandr
 ## Citation
 If you find the idea or code useful for your research, please cite [our paper](https://arxiv.org/abs/1909.12255):
 ```
-@inproceedings{yang2019harnessing,
+@article{yang2019harnessing,
   title={Harnessing Structures for Value-Based Planning and Reinforcement Learning},
   author={Yang, Yuzhe and Zhang, Guo and Xu, Zhi and Katabi, Dina},
   journal={arXiv preprint arXiv:1909.12255},
