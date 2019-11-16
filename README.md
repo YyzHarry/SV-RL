@@ -42,6 +42,7 @@ pip install -r requirements.txt
 
 ## Acknowledgements
 We use the implemetation in the [fancyimpute package](https://github.com/iskandr/fancyimpute) for part of our matrix estimation algorithms.
+The implementation of SVP is partly based on [this work](https://github.com/haoyio/LowRankMDP).
 
 
 ## Citation
