@@ -12,7 +12,7 @@ Specifically, we propose (1) Structured Value-based Planning (__SVP__), for clas
 ### Prerequisites
 The current code has been tested on Ubuntu 16.04, for both SVP and SV-RL.
 
-- __SVP:__ The SVP part is mainly implemented in [__Julia__](https://julialang.org/) (and a small part in Python) for several classical stochastic control tasks. We use Julia version of `v0.7.0`, which can be downloaded [here](https://julialang.org/downloads/oldreleases.html).
+- __SVP:__ The SVP part is mainly implemented in [__Julia__](https://julialang.org/) (and a small part in Python) for several classical stochastic control tasks. We use Julia version of `v0.7.0`, which can be downloaded [here](https://julialang.org/downloads/oldreleases/).
 - __SV-RL:__ We provide a PyTorch implementation of SV-RL for deep reinforcement learning tasks.
 
 **Note:** We test SVP implementation on Julia `v0.7.0`, which is not the latest version (and is unmaintained now). You may choose to use later verion of Julia if needed, but we didn't test on other versions.
