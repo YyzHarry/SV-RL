@@ -1,6 +1,6 @@
 # Harnessing Structures for Value-Based Planning and Reinforcement Learning
 
-This repository contains the implementation code for paper [Harnessing Structures for Value-Based Planning and Reinforcement Learning](https://arxiv.org/abs/1909.12255).
+This repository contains the implementation code for paper [Harnessing Structures for Value-Based Planning and Reinforcement Learning](https://openreview.net/forum?id=rklHqRVKvH) (__ICLR 2020, Oral__).
 
 This work proposes a generic framework that allows for exploiting the underlying _low-rank structures_ of the state-action value function (_Q_ function), in both planning and deep reinforcement learning.
 We verify empirically the wide existence of low-rank _Q_ functions in the context of control and deep RL tasks.
@@ -47,12 +47,13 @@ The implementation of SVP is partly based on [this work](https://github.com/haoy
 
 ## Citation
 If you find the idea or code useful for your research, please cite [our paper](https://arxiv.org/abs/1909.12255):
-```
-@article{yang2019harnessing,
+```bib
+@inproceedings{
+  yang2020harnessing,
   title={Harnessing Structures for Value-Based Planning and Reinforcement Learning},
-  author={Yang, Yuzhe and Zhang, Guo and Xu, Zhi and Katabi, Dina},
-  journal={arXiv preprint arXiv:1909.12255},
-  year={2019},
-  url={https://arxiv.org/abs/1909.12255},
+  author={Yuzhe Yang and Guo Zhang and Zhi Xu and Dina Katabi},
+  booktitle={International Conference on Learning Representations},
+  year={2020},
+  url={https://openreview.net/forum?id=rklHqRVKvH}
 }
 ```
